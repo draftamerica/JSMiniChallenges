@@ -1,39 +1,46 @@
 <!doctype html>
 <html lang="en">
     <!-- ======= ======= ======= head ======= ======= ======= -->
-	<head>
-	    <meta charset="utf-8">
-	    <title>Photographs!</title>
+<head>
+    <meta charset="utf-8">
+    <title>Photographs!</title>
 
-        <!-- == styles == -->
-        <link rel="stylesheet" type="text/css" href="photographs.css">
-	</head>
+	<!-- == styles == -->
+    <!-- <link rel="stylesheet" type="text/css" href="photographs.css"> -->
+</head>
 
     <!-- ======= ======= ======= body ======= ======= ======= -->
-	<body>
+<body>
+
+<div id="photostuff">
+	<p class="photoinfo">&nbsp;</p>
+	<p class="photoinfo">&nbsp;</p>
+	<p class="photoinfo">&nbsp;</p>
+</div>
+
+	<label for="title">Title</label>
+	   <input type="text" id="titleinput" name="title">
+	<br>
+	<br>
+
+    <label for="location">Location</label>
+    <input type="text" id="locationinput" name="location">
+	<br>
+	<br>
+
+    <label for="url">URL</label>
+	<input type="text" id="urlinput" name="url">
+	<br>
+	<br>
+
+    <input type="button" id="saveButton" value="Save">
+
+	<ul id="phototitles"> </ul>
 
 
-		<label for="title">Title</label>
-	    <input type="text" id="titleinput" name="title">
-		<br>
-		<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="photographs.js"></script>
 
-	    <label for="location">Location</label>
-	    <input type="text" id="locationinput" name="location">
-		<br>
-		<br>
+</body>
 
-	    <label for="url">URL</label>
-		<input type="text" id="urlinput" name="url">
-		<br>
-		<br>
-
-	    <input type="button" id="saveButton" value="Save">
-
-		<ul id="phototitles"> </ul>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="photographs.js"></script>
-
-	</body>
 </html>
